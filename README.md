@@ -15,6 +15,7 @@ O CMeconecta busca facilitar o processo de busca por orientadores no curso de ci
 - buscar por palavras-chave: nome, linha de pesquisa
 - postar avaliações sobre aquele professor
 - ler avaliações de outros usuários
+- consumir dados dos sites dos institutos (piloto: imputar dados manualmente)
 
 ## Autoras
 Júlia Chaves : juliachaves@usp.br
