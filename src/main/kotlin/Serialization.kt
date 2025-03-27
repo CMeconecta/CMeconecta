@@ -1,20 +1,15 @@
-package com.example
+package com.CMeconecta
 
-import com.codahale.metrics.*
-import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
-import io.ktor.server.auth.*
-import io.ktor.server.metrics.dropwizard.*
 import io.ktor.server.plugins.contentnegotiation.*
-import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import java.sql.Connection
-import java.sql.DriverManager
-import java.util.concurrent.TimeUnit
 
 fun Application.configureSerialization() {
+    install(ContentNegotiation) {
+        json()
+    }
     routing {
         get("/json/kotlinx-serialization") {
                 call.respond(mapOf("hello" to "world"))

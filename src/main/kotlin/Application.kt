@@ -1,4 +1,4 @@
-package com.example
+package com.CMeconecta
 
 import io.ktor.server.application.*
 
@@ -7,9 +7,6 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    configureMonitoring()
-    configureSecurity()
     configureSerialization()
-    configureDatabases()
     configureRouting()
 }
